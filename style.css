@@ -51,6 +51,7 @@ body {
     display: block;
     width: 100%;
     opacity: 0.75;
+    mix-blend-mode: multiply;
 }
 
 .card-body {
@@ -133,9 +134,15 @@ body {
     }
     .card-footer {
         text-align: left;
-        flex-direction: row;
-        justify-content: space-between;
+        display: block;
         padding-right: 5rem;
         padding-left: 3rem;
+    }
+    .stats {
+        display: flex;
+        justify-content: space-between;
+    }
+    .stat {
+        list-style-type: none;
     }
 }
